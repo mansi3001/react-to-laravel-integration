@@ -21,5 +21,9 @@ Route::get('/review-dashboard', function () {
     return Inertia::render('ReviewDashboard');
 })->name('review.dashboard');
 
+Route::get('{any?}', function () {
+    return Inertia::render('Errors/NotFound');
+})->where('any', '^(?!api/).*$');
+
 require __DIR__ . '/settings.php';
 require __DIR__ . '/auth.php';
