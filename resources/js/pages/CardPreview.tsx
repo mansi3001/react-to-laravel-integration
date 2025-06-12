@@ -13,7 +13,7 @@ const CardPreview: React.FC<CardPreviewProps> = ({ businessInfo, platforms, prim
         navigator.clipboard.writeText(text);
     };
 
-    return +(
+    return (
         <div className="space-y-6">
             {/* Final Preview */}
             <Card className="rounded-2xl border-0 bg-white/70 shadow-lg backdrop-blur-sm">

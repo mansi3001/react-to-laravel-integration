@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Link } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 import { ArrowLeft, BarChart3, Eye, Plus, Star, Users } from 'lucide-react';
 
 const Dashboard = () => {
@@ -18,13 +18,15 @@ const Dashboard = () => {
     ];
 
     return (
+        <>
+        <Head title="Review Dashboard" />
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 p-6">
             <div className="mx-auto max-w-7xl">
                 {/* Header */}
                 <div className="mb-8 flex items-center justify-between">
                     <div className="flex items-center">
                         <Link href="/">
-                            <Button variant="ghost" className="mr-4 rounded-xl hover:bg-white/70">
+                            <Button variant="ghost" className="mr-4 rounded-xl hover:bg-white/70 cursor-pointer">
                                 <ArrowLeft className="mr-2 h-5 w-5" />
                                 Back to Home
                             </Button>
@@ -35,7 +37,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <Link href="/create">
-                        <Button className="rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-white shadow-lg transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl">
+                        <Button className="rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-white shadow-lg transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl cursor-pointer">
                             <Plus className="mr-2 h-5 w-5" />
                             Create New Card
                         </Button>
@@ -99,6 +101,7 @@ const Dashboard = () => {
                 </Card>
             </div>
         </div>
+        </>
     );
 };
 

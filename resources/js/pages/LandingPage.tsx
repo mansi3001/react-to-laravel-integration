@@ -79,7 +79,7 @@ function LandingPage() {
 
                         <div className="mb-16 flex flex-col items-center justify-center gap-4 sm:flex-row">
                             <Link href="/create">
-                                <Button className="transform rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-700 hover:to-purple-700 hover:shadow-xl">
+                                <Button className="transform rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-700 hover:to-purple-700 hover:shadow-xl cursor-pointer">
                                     Create Your Card Now
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Button>
@@ -87,7 +87,7 @@ function LandingPage() {
                             <Link href="/create">
                                 <Button
                                     variant="outline"
-                                    className="rounded-xl border-2 border-slate-300 px-8 py-4 text-lg font-semibold transition-all duration-300 hover:border-blue-500 hover:text-blue-600"
+                                    className="rounded-xl border-2 border-slate-300 px-8 py-4 text-lg font-semibold transition-all duration-300 hover:border-blue-500 hover:text-blue-600 cursor-pointer"
                                 >
                                     See Demo
                                 </Button>
@@ -270,7 +270,7 @@ function LandingPage() {
                                 </div>
 
                                 <Link href="/create">
-                                    <Button className="mb-6 w-full rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-700 hover:to-purple-700 hover:shadow-xl">
+                                    <Button className="mb-6 w-full rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-700 hover:to-purple-700 hover:shadow-xl cursor-pointer">
                                         Get Your Review Card
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </Button>
@@ -332,7 +332,7 @@ function LandingPage() {
                             Join hundreds of tradespeople who've transformed their online reputation with just one simple card.
                         </p>
                         <Link href="/create">
-                            <Button className="transform rounded-xl bg-gradient-to-r from-emerald-500 to-blue-500 px-12 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-600 hover:to-blue-600 hover:shadow-xl">
+                            <Button className="transform rounded-xl bg-gradient-to-r from-emerald-500 to-blue-500 px-12 py-4 text-xl font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-600 hover:to-blue-600 hover:shadow-xl cursor-pointer">
                                 <Zap className="mr-2 h-6 w-6" />
                                 Create Your Card Now - £27
                             </Button>

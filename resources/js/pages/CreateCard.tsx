@@ -1,14 +1,14 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { BusinessInfo, Platform } from '@/types/card';
-import { Link } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 import { ArrowLeft, Eye } from 'lucide-react';
 import { useState } from 'react';
 import BusinessInfoForm from './BusinessInfoForm';
 import CardDesignSelection from './CardDesignSelection';
-import CardPreview from './CardPreview';
 import LivePreviewCard from './LivePreviewCard';
 import PlatformManager from './PlatformManager';
+import CardPreview from './CardPreview';
 
 const CreateCard = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -30,6 +30,7 @@ const CreateCard = () => {
     ];
 
     const renderStepContent = () => {
+        console.log({currentStep});
         switch (currentStep) {
             case 1:
                 return <BusinessInfoForm businessInfo={businessInfo} setBusinessInfo={setBusinessInfo} />;
@@ -58,12 +59,14 @@ const CreateCard = () => {
         }
     };
     return (
+        <>
+        <Head title="Create Card" />
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 p-6">
             <div className="mx-auto max-w-6xl">
                 {/* Header */}
                 <div className="mb-8 flex items-center">
                     <Link href="/review-dashboard">
-                        <Button variant="ghost" className="mr-4 rounded-xl hover:bg-white/70">
+                        <Button variant="ghost" className="mr-4 rounded-xl hover:bg-white/70 cursor-pointer">
                             <ArrowLeft className="mr-2 h-5 w-5" />
                             Back to Dashboard
                         </Button>
@@ -146,6 +149,7 @@ const CreateCard = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
